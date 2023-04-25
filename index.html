@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thanks for taking a minute to help us better understand our users</p>
+    <form id="survey-form">
+      <label for="name" id="name-label" >Name<input id="name" placeholder="Name" type="text" required/></label>
+
+      <label for="email" id="email-label" >Email<input id="email" placeholder="Email" type="email" required/></label>
+      
+      <label for="number" id="number-label" >What is your favorite number?<input id="number" placeholder="Favorite number" type="number" min="13" max="1000" required/></label>
+      
+			<label for="dropdown">What's your favorite flavor of ice cream?
+				<select id="dropdown" required>
+					<option value=""></option>
+					<option value="Vanilla">Vanilla</option>
+					<option value="Chocolate">Chocolate</option>
+					<option value="Strawberry">Strawberry</option>
+					<option value="Other">Other</option>
+				</select>
+			</label>
+			
+			<img src="https://4.bp.blogspot.com/-00fowDBj_Mc/VPBhdw8o9LI/AAAAAAAAFi4/nJunHpARdpw/s320/dress.png" alt="A dress with a confusing combination of colors">
+			<label for="blue-black"><input id="blue-black" type="radio" name="the-dress" class="inline" value="blue-black"/>Blue and black</label>
+			<label for="white-gold"><input id="white-gold" type="radio" name="the-dress" class="inline" value="white-gold"/>White and gold</label>
+    	
+			<div class="checkbox-wrapper">
+				<label for="checkboxes">What foods do you like?</label>
+				<label for="Hamburger"><input type="checkbox" value="Hamburger" class="inline"/>Hamburger</label>
+				<label for="Pizza"><input type="checkbox" value="Pizza" class="inline"/>Pizza</label>
+			</div>
+
+			<div class="comments-wrapper">
+				<label for="comments">Is there anything else you would like to share?<textarea id="comments" rows="3" cols="30"></textarea>
+				</label>
+			</div>
+
+			<input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
